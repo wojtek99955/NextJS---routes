@@ -9,6 +9,7 @@ const BackBtn = styled.button`
   border: none;
   margin: 2rem;
   cursor: pointer;
+  border-radius: 10px;
 `;
 
 const Title = styled.h1`
