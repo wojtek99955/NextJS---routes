@@ -7,6 +7,17 @@ const BackBtn = styled.button`
   background: blue;
   color: white;
   border: none;
+  margin: 2rem;
+  cursor: pointer;
+`;
+
+const Title = styled.h1`
+  font-size: 4rem;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
 `;
 
 function aboutSubpage() {
@@ -15,7 +26,7 @@ function aboutSubpage() {
       <Link href="/about">
         <BackBtn>Back</BackBtn>
       </Link>
-      <div>About subpage</div>
+      <Title>About subpage</Title>
     </>
   );
 }
