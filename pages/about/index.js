@@ -22,6 +22,7 @@ const Button = styled.button`
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  margin-bottom: 3rem;
 `;
 const Title = styled.h1`
   font-size: 4rem;
