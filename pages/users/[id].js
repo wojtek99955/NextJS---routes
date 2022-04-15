@@ -1,4 +1,6 @@
+import Link from "next/link";
 import styled from "styled-components";
+import { BackBtn } from "../about/aboutSubpage";
 
 const Container = styled.div`
   h1 {
@@ -17,6 +19,7 @@ const DetailsContainer = styled.div`
     font-size: 2rem;
   }
 `;
+const Header = styled.div``;
 
 export const getStaticPaths = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -46,7 +49,12 @@ export const getStaticProps = async (context) => {
 function Details({ user }) {
   return (
     <Container>
-      <h1>User Details</h1>
+      <Header>
+        <Link href="/users">
+          <BackBtn>Back</BackBtn>
+        </Link>
+        <h1>User Details</h1>
+      </Header>
       <DetailsContainer>
         <h3>{user.name}</h3>
         <p>
