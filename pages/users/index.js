@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -58,7 +59,9 @@ function index({ users }) {
           return (
             <UserContainer key={user.id}>
               <h3>{user.name}</h3>
-              <button>More</button>
+              <Link href={`/users/${user.id}`}>
+                <button>More</button>
+              </Link>
             </UserContainer>
           );
         })}
