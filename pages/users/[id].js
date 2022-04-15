@@ -49,9 +49,20 @@ function Details({ user }) {
       <h1>User Details</h1>
       <DetailsContainer>
         <h3>{user.name}</h3>
-        <p>username: {user.username}</p>
-        <p>email: {user.email}</p>
-        <p>phone: {user.phone}</p>
+        <p>
+          <strong>username: </strong> {user.username}
+        </p>
+        <p>
+          <strong>email: </strong> {user.email}
+        </p>
+        <p>
+          <strong>phone: </strong>
+          {user.phone}
+        </p>
+        <p>
+          <strong>city: </strong>
+          {user.address.city}
+        </p>
         <p></p>
       </DetailsContainer>
     </Container>
