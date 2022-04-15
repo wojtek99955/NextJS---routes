@@ -36,6 +36,9 @@ function Layout({ children }) {
           <Link href="/about">
             <StyledLink>About</StyledLink>
           </Link>
+          <Link href="/users">
+            <StyledLink>Users</StyledLink>
+          </Link>
           <Link href="/gallery">
             <StyledLink>Gallery</StyledLink>
           </Link>
