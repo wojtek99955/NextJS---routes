@@ -21,12 +21,7 @@ function gallery() {
       {images.map((image) => {
         return (
           <div key={image.id}>
-            <Image
-              alt={image.id}
-              src={`${image.src}`}
-              width="280"
-              height="420"
-            />
+            <Image alt={image.id} src={image.src} width="280" height="420" />
           </div>
         );
       })}
